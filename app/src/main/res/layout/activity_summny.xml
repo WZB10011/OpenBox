@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/cs_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开箱统计"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#80111111"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tv_total_spent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="总投入: ¥0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_total_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="总获得: ¥0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_profit_loss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="盈  亏: ¥0.00"
+                android:textColor="#00FF00"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_gold_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="金色物品: 0件"
+                android:textColor="#FFD700"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="珍爱生命，远离开箱"
+            android:textSize="20sp"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开箱物品列表："
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/layout_inventory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#80111111"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btn_back_to_selection"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:text="返回选择"
+            android:textSize="18sp"
+            android:background="@drawable/button_open_case"/>
+    </LinearLayout>
+</ScrollView>

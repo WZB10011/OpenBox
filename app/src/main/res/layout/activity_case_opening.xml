@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/cs_background">
+
+    <ImageView
+        android:id="@+id/caseImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/cs1_case"
+        android:contentDescription="武器箱"/>
+
+    <Button
+        android:id="@+id/btn_open_case"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="开箱"
+        android:textSize="18sp"
+        android:background="@drawable/button_open_case"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:background="#80111111">
+
+        <TextView
+            android:id="@+id/tv_total_spent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="总投入: ¥0.00"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_total_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="总获得: ¥0.00"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_profit_loss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="盈  亏: ¥0.00"
+            android:textColor="#00FF00"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_gold_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="金色物品: 0件"
+            android:textColor="#FFD700"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</LinearLayout>
